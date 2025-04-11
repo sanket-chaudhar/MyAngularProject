@@ -1,0 +1,6 @@
+<p>cube-outer works!</p>
+<app-cubeinner [cubenum]="num"  (cubeout)="showsquare($event)"></app-cubeinner>
+
+<p> cube of number = {{numOut}}</p>
+
+<input type="number" [(ngModel)]="num">

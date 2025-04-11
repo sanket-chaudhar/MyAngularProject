@@ -1,0 +1,7 @@
+<p>additionouter works!</p>
+<app-additionineer [num1]="num1" [num2]="num2" (additionOut)="showaddition($event)"></app-additionineer>
+
+<p>addition of two number = {{final}}</p>
+
+<input type="number" [(ngModel)]="num1">
+<input type="number" [(ngModel)]="num2">

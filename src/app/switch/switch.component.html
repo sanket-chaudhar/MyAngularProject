@@ -1,0 +1,65 @@
+<!-- <p>switch works!</p>
+
+<div [ngSwitch]="currentUserRole">
+
+</div>
+
+<div *ngSwitchCase="'user'">
+    welcome admin you have complete access
+
+</div>
+<div *ngSwitchCase="'admin'">
+    welcome admin 
+
+</div>
+<div *ngSwitchCase= "'guest'">
+welcome guest first login
+</div>
+<div *ngSwitchDefault>
+    you not recognize
+</div> -->
+
+<div *ngFor = "let s of student" [ngSwitch]="s.result">
+
+    <p *ngSwitchCase="'pass'" class="pass">
+        {{s.name}} - {{s.marks}} - {{s.result}}
+    </p>
+    <p *ngSwitchCase="'fail'" class="fail">
+        {{s.name}} - {{s.marks}} - {{s.result}}
+
+    </p>
+    <p *ngSwitchCase="'absent'" class="absent"></p>
+
+    <p>{{s.name}} - {{s.marks}} - {{s.result}}</p>
+
+</div>
+
+Order=[
+<div *ngFor= "let order of Orders" [ngSwitch]="order.orderstatus">
+<p *ngSwitchCase="'cancelled'" class="cancelled">
+    {{order.orderno}} - {{order.orderdate}} - {{order.customerName}} - {{order.contactno}} - {{order.city}} - {{order.orderstatus}}
+
+
+</p>
+<p *ngSwitchCase= "'proceede'" class="processed">
+    {{order.orderno}} - {{order.orderdate}} - {{order.customerName}} - {{order.contactno}} - {{order.city}} - {{order.orderstatus}}
+
+
+
+</p>
+
+
+
+<p *ngSwitchCase= "'pending'" class="pending">
+    {{order.orderno}} - {{order.orderdate}} - {{order.customerName}} - {{order.contactno}} - {{order.city}} - {{order.orderstatus}}
+
+
+    
+</p>
+</div>
+
+
+
+
+
+

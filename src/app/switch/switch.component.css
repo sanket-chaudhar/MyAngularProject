@@ -1,0 +1,21 @@
+.pass{
+ color: green;
+}
+
+.fail{
+    color: brown;
+}
+.absent{
+    color: yellow;
+}
+
+.cancelled{
+    color: red;
+}
+
+.pending{
+    color: orange;
+}
+.processed{
+    color: green;
+}
